@@ -1,0 +1,31 @@
+@model MyMvcProject.Models.Product
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Ürün Sil";
+}
+
+<div class="delete-product-container">
+    <h2 class="mb-4 text-center">Ürün Sil</h2>
+
+    <div class="alert alert-danger">
+        <p><strong>@Model.Name</strong> adlı ürünü silmek istediğinize emin misiniz?</p>
+        <p>Bu işlem geri alınamaz.</p>
+    </div>
+
+    <form asp-action="Delete" asp-controller="Product" method="post">
+        <input type="hidden" asp-for="ProductId" />
+        <div class="d-flex justify-content-center gap-3">
+            <button type="submit" class="btn btn-danger">
+                <i class="bi bi-trash-fill me-2"></i> Evet, Sil
+            </button>
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="bi bi-x-circle-fill me-2"></i> Hayır, İptal
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

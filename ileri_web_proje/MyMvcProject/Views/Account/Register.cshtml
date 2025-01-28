@@ -1,0 +1,49 @@
+@model MyMvcProject.ViewModels.RegisterViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Kayıt Ol";
+}
+
+<div class="register-container">
+    <h2 class="text-center mb-4">Kayıt Ol</h2>
+    <p class="text-muted text-center mb-4">Lütfen aşağıdaki bilgileri doldurarak kaydınızı tamamlayın.</p>
+
+    <form asp-action="Register" asp-controller="Account" method="post" class="mx-auto" style="max-width: 400px;">
+        <!-- Email -->
+        <div class="form-group mb-3">
+            <label for="Email">E-posta Adresiniz</label>
+            <input type="email" id="Email" name="Email" class="form-control" placeholder="ör. email@example.com" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group mb-3">
+            <label for="Password">Şifre</label>
+            <input type="password" id="Password" name="Password" class="form-control" placeholder="Şifrenizi girin" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form-group mb-4">
+            <label for="ConfirmPassword">Şifreyi Onayla</label>
+            <input type="password" id="ConfirmPassword" name="ConfirmPassword" class="form-control" placeholder="Şifrenizi tekrar girin" />
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="d-grid">
+            <button type="submit" class="btn btn-primary btn-lg">Kaydı Tamamla</button>
+        </div>
+    </form>
+    
+    <!-- Additional Info -->
+    <p class="text-center mt-3">
+        Zaten bir hesabınız var mı? 
+        <a asp-action="Login" asp-controller="Account">Giriş yap</a>.
+    </p>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

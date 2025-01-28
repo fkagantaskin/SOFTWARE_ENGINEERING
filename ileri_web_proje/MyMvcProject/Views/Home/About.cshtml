@@ -1,0 +1,45 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Hakkında Sayfası";
+}
+
+<div class="about-container py-5">
+    <div class="container">
+        <h2 class="mb-5 text-center fw-bold text-primary">Hakkında</h2>
+
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="fs-5">
+                    Bu projede, <strong>ASP.NET MVC</strong> ve <strong>Entity Framework</strong> kullanarak 
+                    CRUD işlemlerini gerçekleştiren bir web uygulaması geliştirilmektedir.
+                </p>
+                <p class="fs-5">
+                    Projede, rol tabanlı yetkilendirme, kayıt/giriş/çıkış işlemleri, 
+                    Layout kullanımı, Partial View ve ViewComponent gibi 
+                    ASP.NET MVC’nin pek çok özelliği örneklenmiştir.
+                </p>
+                <p class="fs-5">
+                    Daha fazla bilgi için 
+                    <a asp-action="Contact" asp-controller="Home" class="text-decoration-none text-primary fw-bold">İletişim</a> 
+                    sayfasını ziyaret edebilir veya 
+                    <a asp-action="Index" asp-controller="Home" class="text-decoration-none text-primary fw-bold">Ana Sayfa</a>ya dönebilirsiniz.
+                </p>
+            </div>
+
+            <div class="col-md-6 text-center">
+                <img src="/images/products/Hakkinda.png" alt="Hakkında Görsel2" class="img-fluid rounded shadow-lg">
+            </div>
+        </div>
+
+        <!-- Çağrı İçin -->
+        <div class="mt-5 text-center">
+            <a asp-action="Contact" asp-controller="Home" class="btn btn-primary btn-lg px-5 text-white">
+                <i class="bi bi-envelope-fill me-2"></i> İletişime Geç
+            </a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,53 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Ana Sayfa";
+}
+
+<div class="hero-banner text-center text-white d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #4CAF50, #2196F3); height: 400px;">
+    <div class="container">
+        <h1 class="display-4 fw-bold">@ViewBag.Message</h1>
+        <p class="lead fs-5">ASP.NET Core MVC ile modern web projelerine adım atın.</p>
+
+        @if (!(User.Identity?.IsAuthenticated ?? false))
+        {
+            <div class="mt-4">
+                <a href="/Account/Login" class="btn btn-outline-light btn-lg me-3 shadow-sm">Giriş Yap</a>
+                <a href="/Account/Register" class="btn btn-warning btn-lg shadow-sm">Kayıt Ol</a>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="latest-products-container my-5">
+    <div class="container">
+        <h2 class="mb-4 text-center text-primary">En Son Ürünler</h2>
+        <div class="row">
+            @await Component.InvokeAsync("LatestProducts", new { count = 3 })
+        </div>
+    </div>
+</div>
+
+<div class="about-section bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 text-dark">Hakkında</h2>
+        <p class="text-center fs-5 text-secondary">
+            Bu projede ASP.NET MVC, Entity Framework ve rol tabanlı yetkilendirme gibi teknolojiler kullanılarak
+            modern bir web uygulaması geliştirilmiştir. Hedefimiz, kolay kullanımlı ve güvenli uygulamalar geliştirmektir.
+        </p>
+        <div class="text-center mt-4">
+            <a href="/Home/About" class="btn btn-info btn-lg shadow-sm text-white">
+                <i class="bi bi-info-circle me-2"></i>Daha Fazlasını Öğren
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="contact-call-to-action text-white text-center py-5" style="background: linear-gradient(135deg, #f44336, #e91e63);">
+    <div class="container">
+        <h2 class="mb-3 fw-bold">Bize Ulaşın</h2>
+        <p class="lead fs-5">Sorularınızı yanıtlamak ve destek sağlamak için buradayız!</p>
+        <a href="/Home/Contact" class="btn btn-light btn-lg shadow-sm">
+            <i class="bi bi-envelope-fill me-2"></i>İletişime Geç
+        </a>
+    </div>
+</div>

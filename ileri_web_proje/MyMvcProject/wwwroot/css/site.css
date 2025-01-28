@@ -1,0 +1,1501 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* access-denied-container Stilleri */
+.access-denied-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa; 
+  border: 1px solid #dee2e6; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; 
+  max-width: 600px; 
+}
+
+.access-denied-container h2 {
+  color: #dc3545; 
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.access-denied-container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #6c757d; 
+}
+
+.access-denied-container .btn-primary {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0d6efd; 
+  border-color: #0d6efd;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.access-denied-container .btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+
+@media (max-width: 768px) {
+  .access-denied-container {
+      padding: 15px;
+      margin: 30px 20px;
+  }
+
+  .access-denied-container h2 {
+      font-size: 1.5rem;
+  }
+
+  .access-denied-container p {
+      font-size: 1rem;
+  }
+
+  .access-denied-container .btn-primary {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+  }
+}
+
+
+/* error-container Stilleri */
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa; 
+  border: 1px solid #dee2e6; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; 
+  max-width: 600px; 
+}
+
+.error-container h2 {
+  color: #dc3545; 
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.error-container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #6c757d; 
+}
+
+.error-container .btn-primary {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0d6efd; 
+  border-color: #0d6efd;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.error-container .btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* Responsive Tasarım İçin */
+@media (max-width: 768px) {
+  .error-container {
+      padding: 15px;
+      margin: 30px 20px;
+  }
+
+  .error-container h2 {
+      font-size: 1.5rem;
+  }
+
+  .error-container p {
+      font-size: 1rem;
+  }
+
+  .error-container .btn-primary {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+  }
+}
+
+
+/* Login Container Stilleri */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 40px;
+  background-color: #ffffff; 
+  border: 1px solid #dee2e6; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; 
+  max-width: 400px; 
+}
+
+/* Başlık */
+.login-container h2 {
+  color: #0d6efd; 
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Form Grupları */
+.login-container .form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Checkbox */
+.login-container .form-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.login-container .form-check-input {
+  margin-right: 10px;
+}
+
+/* Buton  */
+.login-container .btn-primary {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #0d6efd; 
+  border-color: #0d6efd;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.login-container .btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* Responsive Tasarım İçin */
+@media (max-width: 576px) {
+  .login-container {
+      padding: 20px;
+      margin: 20px auto;
+  }
+
+  .login-container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+  }
+
+  .login-container .btn-primary {
+      padding: 8px;
+      font-size: 0.9rem;
+  }
+}
+
+
+/* Register Container Stilleri */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 40px;
+  background-color: #ffffff; 
+  border: 1px solid #dee2e6; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; 
+  max-width: 400px; 
+}
+
+.register-container h2 {
+  color: #0d6efd; 
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.register-container .form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.register-container .btn-primary {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #0d6efd; 
+  border-color: #0d6efd;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.register-container .btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* Responsive Tasarım İçin */
+@media (max-width: 576px) {
+  .register-container {
+      padding: 20px;
+      margin: 20px auto;
+  }
+
+  .register-container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+  }
+
+  .register-container .btn-primary {
+      padding: 8px;
+      font-size: 0.9rem;
+  }
+}
+
+
+/* Create Category Container */
+.create-category-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 40px;
+  background-color: #ffffff; 
+  border: 1px solid #dee2e6; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; 
+  max-width: 500px; 
+}
+
+.create-category-container h2 {
+  color: #198754; 
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Form Grupları */
+.create-category-container .form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.create-category-container .control-label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #343a40; 
+}
+
+/* Buton */
+.create-category-container .btn-success {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #198754; 
+  border-color: #198754;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.create-category-container .btn-success:hover {
+  background-color: #157347;
+  border-color: #146c43;
+}
+
+.create-category-container .btn-secondary {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+  background-color: #6c757d; 
+  border-color: #6c757d;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.create-category-container .btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+/* Responsive Tasarım İçin */
+@media (max-width: 576px) {
+  .create-category-container {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 90%;
+  }
+
+  .create-category-container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+  }
+
+  .create-category-container .btn-success,
+  .create-category-container .btn-secondary {
+      padding: 8px;
+      font-size: 0.9rem;
+  }
+}
+
+/* edit-category-container */
+.edit-category-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 40px;
+  background-color: #ffffff; 
+  border: 1px solid #dee2e6; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; 
+  max-width: 500px; 
+}
+
+.edit-category-container h2 {
+  color: #0d6efd; 
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Form Grupları */
+.edit-category-container .form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.edit-category-container .control-label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #343a40; 
+}
+
+/* Buton */
+.edit-category-container .btn-primary {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #0d6efd; 
+  border-color: #0d6efd;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.edit-category-container .btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.edit-category-container .btn-secondary {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+  background-color: #6c757d; 
+  border-color: #6c757d;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.edit-category-container .btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+/* Responsive Tasarım İçin */
+@media (max-width: 576px) {
+  .edit-category-container {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 90%;
+  }
+
+  .edit-category-container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+  }
+
+  .edit-category-container .btn-primary,
+  .edit-category-container .btn-secondary {
+      padding: 8px;
+      font-size: 0.9rem;
+  }
+}
+
+
+/* Delete Category Container */
+.delete-category-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 40px;
+  background-color: #ffffff; 
+  border: 1px solid #dee2e6; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; 
+  max-width: 500px; 
+}
+
+.delete-category-container h2 {
+  color: #dc3545; 
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Alert */
+.delete-category-container .alert {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f8d7da; 
+  border-color: #f5c6cb; 
+}
+
+.delete-category-container .alert p {
+  margin: 0;
+  color: #842029; 
+}
+
+/* Form Grupları */
+.delete-category-container form {
+  width: 100%;
+}
+
+.delete-category-container .form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Buton */
+.delete-category-container .btn-danger {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #dc3545; 
+  border-color: #dc3545;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.delete-category-container .btn-danger:hover {
+  background-color: #bb2d3b;
+  border-color: #b02a37;
+}
+
+.delete-category-container .btn-secondary {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+  background-color: #6c757d; 
+  border-color: #6c757d;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.delete-category-container .btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+/* Responsive Tasarım İçin */
+@media (max-width: 576px) {
+  .delete-category-container {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 90%;
+  }
+
+  .delete-category-container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+  }
+
+  .delete-category-container .btn-danger,
+  .delete-category-container .btn-secondary {
+      padding: 8px;
+      font-size: 0.9rem;
+  }
+}
+
+
+/* Details Category Container */
+.details-category-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 40px;
+  background-color: #ffffff; 
+  border: 1px solid #dee2e6; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; 
+  max-width: 600px;
+}
+
+.details-category-container h2 {
+  color: #0d6efd; 
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Category Details */
+.category-details dl {
+  width: 100%;
+}
+
+.category-details dt {
+  font-weight: 600;
+  color: #343a40; 
+}
+
+.category-details dd {
+  color: #6c757d; 
+}
+
+/* Buton */
+.details-category-container .btn-primary {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #0d6efd; 
+  border-color: #0d6efd;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.details-category-container .btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* Responsive Tasarım İçin */
+@media (max-width: 576px) {
+  .details-category-container {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 90%;
+  }
+
+  .details-category-container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+  }
+
+  .details-category-container .btn-primary {
+      padding: 8px;
+      font-size: 0.9rem;
+  }
+}
+
+
+/* Index Category Container */
+.index-category-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+  background-color: #ffffff; 
+  border: 1px solid #dee2e6; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; 
+  max-width: 900px; 
+}
+
+/* Başlık */
+.index-category-container h2 {
+  color: #0d6efd; 
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Tablo */
+.index-category-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.index-category-container th, 
+.index-category-container td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 15px;
+}
+
+.index-category-container th {
+  background-color: #343a40; 
+  color: #ffffff; 
+  font-weight: bold;
+}
+
+.index-category-container tbody tr:nth-child(even) {
+  background-color: #f2f2f2; 
+}
+
+.index-category-container tbody tr:hover {
+  background-color: #e9ecef; 
+}
+
+/* Buton */
+.index-category-container .btn {
+  border-radius: 5px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.index-category-container .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Tasarım İçin */
+@media (max-width: 768px) {
+  .index-category-container {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 100%;
+  }
+
+  .index-category-container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+  }
+
+  .index-category-container th, 
+  .index-category-container td {
+      padding: 8px 10px;
+  }
+
+  .index-category-container .btn {
+      padding: 6px 10px;
+      font-size: 0.875rem;
+  }
+}
+
+
+/* About Container */
+.about-container {
+  padding: 40px;
+  background-color: #f8f9fa; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; 
+  max-width: 1000px; 
+}
+
+.about-container h2 {
+  color: #0d6efd; 
+  font-size: 2rem;
+  text-align: center;
+}
+
+.about-container p {
+  font-size: 1.1rem;
+  color: #343a40; 
+  line-height: 1.6;
+}
+
+.about-container a {
+  color: #0d6efd; 
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.about-container a:hover {
+  color: #0a58ca; 
+  text-decoration: underline;
+}
+
+/* CTA Buton Stilleri */
+.about-container .btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.about-container .btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* Responsive Tasarım İçin */
+@media (max-width: 768px) {
+  .about-container {
+      padding: 20px;
+      margin: 20px auto;
+  }
+
+  .about-container h2 {
+      font-size: 1.5rem;
+  }
+
+  .about-container {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+  .about-container .btn-primary {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+  }
+}
+
+/* contact-container */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #ffffff; 
+  border: 1px solid #dee2e6; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; 
+  max-width: 600px; 
+}
+
+.contact-container h2 {
+  color: #0d6efd; 
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Form Grupları */
+.contact-container .form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-container .control-label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #343a40; 
+}
+
+.contact-container .form-control {
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Buton */
+.contact-container .btn-primary {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #0d6efd; 
+  border-color: #0d6efd;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.contact-container .btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* Responsive Tasarım İçin */
+@media (max-width: 576px) {
+  .contact-container {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 90%;
+  }
+
+  .contact-container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+  }
+
+  .contact-container .btn-primary {
+      padding: 8px;
+      font-size: 0.9rem;
+  }
+}
+
+/* Contact Results Container */
+.contact-results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #ffffff; 
+  border: 1px solid #dee2e6; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; 
+  max-width: 700px; 
+}
+
+.contact-results-container h2 {
+  color: #0d6efd; 
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact-results-container p {
+  font-size: 1.1rem;
+  color: #343a40; 
+  line-height: 1.6;
+}
+
+.contact-results-container a {
+  color: #0d6efd; 
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-results-container a:hover {
+  color: #0a58ca; 
+  text-decoration: underline;
+}
+
+/* Alert */
+.contact-results-container .alert {
+  font-size: 1.1rem;
+  color: #155724; 
+  background-color: #d4edda; 
+  border-color: #c3e6cb; 
+}
+
+/* CTA Buton */
+.contact-results-container .btn-primary,
+.contact-results-container .btn-secondary {
+  border-radius: 5px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-results-container .btn-primary:hover,
+.contact-results-container .btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Tasarım İçin */
+@media (max-width: 576px) {
+  .contact-results-container {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 90%;
+  }
+
+  .contact-results-container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+  }
+
+  .contact-results-container .btn-primary,
+  .contact-results-container .btn-secondary {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+  }
+
+  .contact-results-container .alert {
+      font-size: 1rem;
+  }
+}
+
+
+/* Hero Banner */
+.hero-banner {
+  background-image: url('~/images/hero-background.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 8px;
+}
+
+.hero-banner .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-banner h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-banner p {
+  font-size: 1.25rem;
+  margin-top: 20px;
+}
+
+.hero-banner .btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.hero-banner .btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* Latest Products Container */
+.latest-products-container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.latest-products-container h2 {
+  color: #343a40;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.latest-products-container .product-card {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #f8f9fa;
+}
+
+.latest-products-container .product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.latest-products-container .product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.latest-products-container .product-details {
+  padding: 15px;
+  text-align: center;
+}
+
+.latest-products-container .product-details h5 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #0d6efd;
+}
+
+.latest-products-container .product-details p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* Responsive Tasarım İçin */
+@media (max-width: 768px) {
+  .hero-banner {
+      height: 50vh;
+  }
+
+  .hero-banner h1 {
+      font-size: 2.5rem;
+  }
+
+  .hero-banner p {
+      font-size: 1.1rem;
+  }
+
+  .latest-products-container .product-image {
+      height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-banner {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+  .hero-banner h1 {
+      font-size: 2rem;
+  }
+
+  .hero-banner p {
+      font-size: 1rem;
+  }
+
+  .latest-products-container .product-image {
+      height: 120px;
+  }
+}
+
+
+/* Create Product Container */
+.create-product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+  background-color: #ffffff; 
+  border: 1px solid #dee2e6; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; 
+  max-width: 600px; 
+}
+
+.create-product-container h2 {
+  color: #0d6efd; 
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.create-product-container .form-label {
+  font-weight: 600;
+  color: #343a40; 
+}
+
+.create-product-container .form-control,
+.create-product-container .form-select {
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.create-product-container .form-control:focus,
+.create-product-container .form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.create-product-container .btn {
+  border-radius: 5px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.create-product-container .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Tasarım İçin */
+@media (max-width: 576px) {
+  .create-product-container {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 90%;
+  }
+
+  .create-product-container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+  }
+
+  .create-product-container .btn {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+  }
+}
+
+/* edit-product-container */
+.edit-product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+  background-color: #ffffff; 
+  border: 1px solid #dee2e6; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; 
+  max-width: 600px; 
+}
+
+.edit-product-container h2 {
+  color: #0d6efd; 
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.edit-product-container .form-label {
+  font-weight: 600;
+  color: #343a40; 
+}
+
+.edit-product-container .form-control,
+.edit-product-container .form-select {
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.edit-product-container .form-control:focus,
+.edit-product-container .form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.edit-product-container .btn {
+  border-radius: 5px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.edit-product-container .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Tasarım İçin */
+@media (max-width: 576px) {
+  .edit-product-container {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 90%;
+  }
+
+  .edit-product-container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+  }
+
+  .edit-product-container .btn {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+  }
+}
+
+
+/* Delete Product Container */
+.delete-product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #ffffff; 
+  border: 1px solid #dee2e6; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; 
+  max-width: 600px; 
+}
+
+.delete-product-container h2 {
+  color: #dc3545; 
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.delete-product-container .alert {
+  font-size: 1.1rem;
+  color: #842029; 
+  background-color: #f8d7da; 
+  border-color: #f5c2c7; 
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.delete-product-container form {
+  width: 100%;
+}
+
+.delete-product-container .btn {
+  border-radius: 5px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.delete-product-container .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Tasarım İçin */
+@media (max-width: 576px) {
+  .delete-product-container {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 90%;
+  }
+
+  .delete-product-container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+  }
+
+  .delete-product-container .alert {
+      font-size: 1rem;
+  }
+
+  .delete-product-container .btn {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+  }
+}
+
+
+/* Details Product Container */
+.details-product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #f8f9fa; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; 
+  max-width: 800px; 
+}
+
+/* Kart */
+.details-product-container .card {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.details-product-container .card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+.details-product-container .product-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.details-product-container dl dt {
+  font-weight: 600;
+  color: #343a40; 
+}
+
+.details-product-container dl dd {
+  color: #6c757d; 
+}
+
+.details-product-container .card-body {
+  padding: 20px;
+}
+
+/* Eylem Butonları */
+.details-product-container .btn {
+  border-radius: 5px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.details-product-container .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Tasarım İçin */
+@media (max-width: 768px) {
+  .details-product-container {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 90%;
+  }
+
+  .details-product-container .card-img-top,
+  .details-product-container .product-image {
+      height: 200px;
+  }
+
+  .details-product-container dl dt {
+      font-size: 1rem;
+  }
+
+  .details-product-container dl dd {
+      font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .details-product-container .card-img-top,
+  .details-product-container .product-image {
+      height: 150px;
+  }
+
+  .details-product-container dl dt {
+      font-size: 0.9rem;
+  }
+
+  .details-product-container dl dd {
+      font-size: 0.85rem;
+  }
+}
+
+
+/* Product Index Container */
+.product-index-container {
+  padding: 40px;
+  background-color: #f8f9fa; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; 
+  max-width: 1000px; 
+}
+
+/* Başlık */
+.product-index-container h2 {
+  color: #0d6efd; 
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Tablo Başlıkları */
+.product-index-container table thead th {
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Tablo Verileri */
+.product-index-container table tbody td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Buton İkonları ve Metin Boşlukları */
+.product-index-container .btn i {
+  vertical-align: middle;
+}
+
+/* Arama Formu */
+.product-index-container form.d-flex input[type="text"] {
+  width: 250px;
+}
+
+/* Sayfalama Butonları */
+.pagination .page-item.active .page-link {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+}
+
+.pagination .page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #dee2e6;
+}
+
+/* Responsive Tasarım İçin */
+@media (max-width: 768px) {
+  .product-index-container {
+      padding: 20px;
+      margin: 20px auto;
+  }
+
+  .product-index-container h2 {
+      font-size: 2rem;
+  }
+
+  .product-index-container form.d-flex input[type="text"] {
+      width: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-index-container {
+      padding: 10px;
+      margin: 10px auto;
+  }
+
+  .product-index-container h2 {
+      font-size: 1.5rem;
+  }
+
+  .product-index-container form.d-flex {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .product-index-container form.d-flex input[type="text"] {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
+
+
+.hero-banner {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.btn-lg {
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+}
+
+.contact-call-to-action {
+  background: linear-gradient(135deg, #f44336, #e91e63);
+}
+
+

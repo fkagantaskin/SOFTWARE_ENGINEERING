@@ -1,0 +1,24 @@
+@model MyMvcProject.Models.Category
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Kategori Sil";
+}
+
+<div class="delete-category-container">
+    <h2>Kategori Sil</h2>
+
+    <div class="alert alert-danger">
+        <p><strong>@Model.Name</strong> adlı kategoriyi silmek istediğinize emin misiniz?</p>
+    </div>
+
+    <form asp-action="Delete" asp-controller="Category" method="post">
+        <input type="hidden" asp-for="CategoryId" />
+        <button type="submit" class="btn btn-danger">Evet, Sil</button>
+        <a asp-action="Index" class="btn btn-secondary">Hayır, İptal</a>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

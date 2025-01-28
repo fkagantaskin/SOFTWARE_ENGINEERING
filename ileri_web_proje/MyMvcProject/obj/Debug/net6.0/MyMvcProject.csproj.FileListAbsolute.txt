@@ -1,0 +1,8 @@
+C:\Users\F.Kağan\OneDrive\Masaüstü\ileri_web_proje\MyMvcProject\obj\Debug\net6.0\MyMvcProject.csproj.AssemblyReference.cache
+C:\Users\F.Kağan\OneDrive\Masaüstü\ileri_web_proje\MyMvcProject\obj\Debug\net6.0\MyMvcProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\F.Kağan\OneDrive\Masaüstü\ileri_web_proje\MyMvcProject\obj\Debug\net6.0\MyMvcProject.AssemblyInfoInputs.cache
+C:\Users\F.Kağan\OneDrive\Masaüstü\ileri_web_proje\MyMvcProject\obj\Debug\net6.0\MyMvcProject.AssemblyInfo.cs
+C:\Users\F.Kağan\OneDrive\Masaüstü\ileri_web_proje\MyMvcProject\obj\Debug\net6.0\MyMvcProject.csproj.CoreCompileInputs.cache
+C:\Users\F.Kağan\OneDrive\Masaüstü\ileri_web_proje\MyMvcProject\obj\Debug\net6.0\MyMvcProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\F.Kağan\OneDrive\Masaüstü\ileri_web_proje\MyMvcProject\obj\Debug\net6.0\MyMvcProject.RazorAssemblyInfo.cache
+C:\Users\F.Kağan\OneDrive\Masaüstü\ileri_web_proje\MyMvcProject\obj\Debug\net6.0\MyMvcProject.RazorAssemblyInfo.cs

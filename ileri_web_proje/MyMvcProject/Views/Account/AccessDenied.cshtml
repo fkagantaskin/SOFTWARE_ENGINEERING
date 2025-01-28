@@ -1,0 +1,10 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="error-container">
+    <h2>Hata Oluştu</h2>
+    <p>Beklenmeyen bir hata ile karşılaştık. Lütfen daha sonra tekrar deneyin.</p>
+
+    <a class="btn btn-primary" href="@Url.Action("Index", "Home")">Ana Sayfaya Dön</a>
+</div>

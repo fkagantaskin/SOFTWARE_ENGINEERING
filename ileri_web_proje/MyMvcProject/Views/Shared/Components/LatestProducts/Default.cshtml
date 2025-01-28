@@ -1,0 +1,19 @@
+@model IEnumerable<MyMvcProject.Models.Product>
+
+<div class="row">
+    @foreach (var product in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="product-card">
+                <img src="~/images/products/@product.ImageFileName" alt="@product.Name" class="product-image">
+                <div class="product-details">
+                    <h5>@product.Name</h5>
+                    <p>@product.Description</p>
+                    <a asp-action="Details" asp-controller="Product" asp-route-id="@product.ProductId" class="btn btn-info">
+                        <i class="bi bi-eye-fill me-2"></i> Detay
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

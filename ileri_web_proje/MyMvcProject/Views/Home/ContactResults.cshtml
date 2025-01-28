@@ -1,0 +1,26 @@
+@{
+    ViewBag.Title = "İletişim Sonucu";
+}
+
+<div class="contact-results-container">
+    <h2 class="mb-4">İletişim Sonucu</h2>
+    
+    <p>Gönderdiğiniz mesaj:</p>
+    
+    <div class="alert alert-success">
+        @ViewBag.ResultMessage
+    </div>
+    
+    <div class="mt-4">
+        <a asp-action="Index" asp-controller="Home" class="btn btn-primary">
+            <i class="bi bi-house-door-fill me-2"></i> Ana Sayfaya Dön
+        </a>
+        <a asp-action="Contact" asp-controller="Home" class="btn btn-secondary">
+            <i class="bi bi-envelope-fill me-2"></i> Yeni Mesaj Gönder
+        </a>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

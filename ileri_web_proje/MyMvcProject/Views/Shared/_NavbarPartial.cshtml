@@ -1,0 +1,42 @@
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<MyMvcProject.Models.ApplicationUser> SignInManager
+@inject UserManager<MyMvcProject.Models.ApplicationUser> UserManager
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="@Url.Action("Index", "Home")">MyMvcProject</a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("Index", "Home")">Anasayfa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("Index", "Category")">Kategoriler</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("Index", "Product")">Ürünler</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Logout", "Account")"
+                       onclick="document.getElementById('logoutForm').submit(); return false;">
+                       Çıkış Yap
+                    </a>
+                    <form id="logoutForm" asp-action="Logout" asp-controller="Account" method="post"></form>
+                </li>
+            }
+            else
+            {
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Login", "Account")">Giriş</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Register", "Account")">Kayıt Ol</a>
+                </li>
+            }
+        </ul>
+    </div>
+</nav>

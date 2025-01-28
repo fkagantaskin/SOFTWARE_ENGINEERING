@@ -1,0 +1,52 @@
+@model MyMvcProject.ViewModels.LoginViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Giriş Yap";
+}
+
+<div class="login-container mx-auto" style="max-width: 400px; margin-top: 50px;">
+    <h2 class="text-center mb-4">Giriş Yap</h2>
+    <p class="text-center text-muted mb-4">Hesabınıza giriş yaparak tüm özelliklerden faydalanabilirsiniz.</p>
+
+    <form asp-action="Login" asp-controller="Account" method="post" class="needs-validation" novalidate>
+        <!-- Email -->
+        <div class="form-group mb-3">
+            <label for="Email">E-posta Adresi</label>
+            <input type="email" id="Email" name="Email" class="form-control" placeholder="E-posta adresinizi girin" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group mb-3">
+            <label for="Password">Şifre</label>
+            <input type="password" id="Password" name="Password" class="form-control" placeholder="Şifrenizi girin" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <!-- Remember Me -->
+        <div class="form-check mb-3">
+            <input type="checkbox" id="RememberMe" name="RememberMe" class="form-check-input" />
+            <label for="RememberMe" class="form-check-label">
+                Beni Hatırla
+            </label>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="d-grid">
+            <button type="submit" class="btn btn-primary btn-lg">
+                <i class="bi bi-box-arrow-in-right me-2"></i> Giriş Yap
+            </button>
+        </div>
+
+        <!-- Additional Links -->
+        <p class="text-center mt-3">
+            Henüz bir hesabınız yok mu? 
+            <a href="/Account/Register">Kayıt Ol</a>.
+        </p>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
