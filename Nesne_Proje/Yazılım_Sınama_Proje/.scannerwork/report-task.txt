@@ -1,0 +1,6 @@
+projectKey=Yazilim_Sinama
+serverUrl=http://localhost:9000
+serverVersion=24.12.0.100206
+dashboardUrl=http://localhost:9000/dashboard?id=Yazilim_Sinama
+ceTaskId=462972f3-7974-430a-83bd-385a842dff4f
+ceTaskUrl=http://localhost:9000/api/ce/task?id=462972f3-7974-430a-83bd-385a842dff4f
